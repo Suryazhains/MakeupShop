@@ -1,4 +1,4 @@
-import React from 'react';
+
 import HomeOne from '../src/components/Homeone';
 import './App.css'; 
 
