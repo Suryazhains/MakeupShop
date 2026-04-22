@@ -15,7 +15,7 @@ const HomeOne = () => {
     <div className="w-full bg-white font-sans overflow-x-hidden">
       <Header />
 
-      {/* ================= HERO SECTION ================= */}
+
       <section className="relative w-full bg-white flex flex-col items-center pt-28 pb-20 px-6 md:px-16 lg:px-24">
 
         {/* Floating Boy Illustration */}
@@ -82,16 +82,24 @@ const HomeOne = () => {
           </h1>
 
           {/* Sub-description */}
-          <p className="text-gray-500 text-[15px] md:text-[17px] max-w-xl mt-6 mb-10 leading-relaxed font-medium">
+          <p className="text-[#415762] text-[15px] md:text-[17px] max-w-xl mt-6 mb-10 leading-relaxed font-medium">
             Expert bridal makeup, laser hair removal, and hydra facials
             <br className="hidden md:block" />
             delivered with precision, care, and consistency in Villupuram.
           </p>
 
           {/* CTA Button */}
-          <button className="bg-[#111111] hover:bg-black text-white text-[15px] font-medium px-8 py-3.5 rounded-[14px] shadow-sm transition-transform hover:scale-105 active:scale-95">
-            Contact now
-          </button>
+         <button
+  onClick={() => {
+    document.getElementById("footer")?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  }}
+  className="bg-[#111111] hover:bg-black text-white text-[15px] font-medium px-8 py-3.5 rounded-[14px] shadow-sm transition-transform hover:scale-105 active:scale-95"
+>
+  Contact now
+</button>
         </div>
 
         {/* Full-width Hero Image */}
@@ -111,107 +119,139 @@ const HomeOne = () => {
         </p>
       </div>
 
-      {/* ================= SERVICES SECTION ================= */}
-      <section className="w-full bg-white text-gray-900 flex flex-col items-center pt-10 pb-28 px-6 md:px-16 lg:px-24">
 
-        {/* Star / Geometric Icon */}
-        <div className="mb-6 flex justify-center">
-          <img src={StarIcon} alt="Star Icon" className="w-10 h-10 object-contain" />
-        </div>
+  <section className="w-full bg-white text-gray-900 flex flex-col items-center pt-10 pb-28 px-6 md:px-16 lg:px-24">
 
-        {/* ── Section Heading ── */}
-        <h2 className="text-4xl md:text-[3.5rem] font-bold text-center mb-8 leading-[1.1] max-w-2xl tracking-tight">
-          Everything you <br />
-          need, all in{" "}
-          <span className="relative inline-block whitespace-nowrap isolate">
-            <span className="relative z-10">one place</span>
+  {/* Star / Geometric Icon */}
+  <div className="mb-6 flex justify-center">
+    <img src={StarIcon} alt="Star Icon" className="w-20 h-20 object-contain" />
+  </div>
 
-            <span
-              className="absolute bottom-[8%] left-[2%] w-[94%] h-[55%] z-0 rounded-[10px] -rotate-1"
-              style={{ backgroundColor: "#dcfb82" }}
-            />
-          </span>
-        </h2>
+  {/* Heading */}
+  <h2 className="text-4xl md:text-[3rem] font-medium text-center mb-8 leading-[1.1] max-w-2xl tracking-tight">
+    Everything you <br />
+    need, all in{" "}
+    <span className="relative inline-block whitespace-nowrap isolate">
+      <span className="relative z-10">one place</span>
 
-        {/* Get a Demo Button */}
-        <button className="bg-[#111111] text-white px-5 py-2.5 rounded-xl text-sm font-medium mb-16 hover:bg-black transition-colors flex items-center gap-2 shadow-sm">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-            <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
-            <line x1="3" y1="9" x2="21" y2="9" />
-          </svg>
-          Get a demo
-        </button>
+      <span
+        className="absolute bottom-[8%] left-[2%] w-[94%] h-[55%] z-0 rounded-[10px] -rotate-1"
+        style={{ backgroundColor: "#dcfb82" }}
+      />
+    </span>
+  </h2>
 
-        {/* ── Service Cards ── */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 lg:gap-14 w-full max-w-[1400px] items-start">
+  {/* Get Demo Button with Modern Computer Icon */}
+  <button className="bg-[#111111] text-white px-5 py-2.5 rounded-xl text-sm font-medium mb-16 hover:bg-black transition-colors flex items-center gap-2 shadow-sm">
+    <svg
+      width="16"
+      height="16"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <rect x="3" y="4" width="18" height="12" rx="2.5"></rect>
+      <path d="M8 20h8"></path>
+      <path d="M12 16v4"></path>
+    </svg>
 
-          {/* Card 1: Bridal Makeup */}
-          <div className="flex flex-col group h-full">
-            <div className="bg-gray-100 rounded-[2rem] h-64 md:h-72 w-full mb-6 overflow-hidden">
-              <img
-                src={HeroOne}
-                alt="Bridal Makeup"
-                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-              />
-            </div>
-            <div className="flex items-center gap-3 mb-2">
-              <h3 className="text-xl font-bold tracking-tight">Bridal Makeup</h3>
-              {/* Yellow badge — matches Image 1 */}
-              <span
-                className="text-black text-[10px] font-bold px-2 py-0.5 rounded uppercase tracking-wide"
-                style={{ backgroundColor: '#dcfb82' }}
-              >
-                Most trusted!
-              </span>
-            </div>
-            <p className="text-[13px] text-gray-500 leading-relaxed font-medium mb-1">
-              Your wedding day needs precision.
-            </p>
-            <p className="text-[13px] text-gray-500 leading-relaxed font-medium mb-5">
-              We create bridal looks that suit your face, outfit, and occasion. The makeup stays for long hours and looks natural in person while also appearing perfect on camera.
-            </p>
-          </div>
+    Get a demo
+  </button>
 
-          {/* Card 2: Laser Hair Removal */}
-          <div className="flex flex-col group h-full">
-            <div className="bg-gray-100 rounded-[2rem] h-64 md:h-72 w-full mb-6 overflow-hidden">
-              <img
-                src={HeroTwo}
-                alt="Laser Hair Removal"
-                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-              />
-            </div>
-            <h3 className="text-xl font-bold mb-2 tracking-tight">Laser Hair Removal</h3>
-            <p className="text-[13px] text-gray-500 leading-relaxed font-medium mb-1">
-              Tired of waxing again and again?
-            </p>
-            <p className="text-[13px] text-gray-500 leading-relaxed font-medium mb-5">
-              Our laser hair removal treatments help reduce hair growth over time. It also helps avoid ingrown hair and skin irritation. Safe, hygienic, and handled based on your skin type.
-            </p>
-          </div>
+  {/* Service Cards */}
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-10 lg:gap-14 w-full max-w-[1400px] items-start">
 
-          {/* Card 3: Hydra Facial */}
-          <div className="flex flex-col group h-full">
-            <div className="bg-gray-100 rounded-[2rem] h-64 md:h-72 w-full mb-6 overflow-hidden">
-              <img
-                src={HeroThree}
-                alt="Hydra Facial"
-                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-              />
-            </div>
-            <h3 className="text-xl font-bold mb-2 tracking-tight">Hydra Facial</h3>
-            <p className="text-[13px] text-gray-500 leading-relaxed font-medium mb-1">
-              Your skin needs more than basic care.
-            </p>
-            <p className="text-[13px] text-gray-500 leading-relaxed font-medium mb-5">
-              Hydra facial helps clean pores deeply, hydrate the skin, and improve overall glow and texture. Ideal before events or as a regular skincare routine.
-            </p>
-          </div>
+    {/* Card 1 */}
+    <div className="flex flex-col group h-full">
+      <div className="bg-gray-100 rounded-[2rem] h-64 md:h-72 w-full mb-6 overflow-hidden">
+        <img
+          src={HeroOne}
+          alt="Bridal Makeup"
+          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+        />
+      </div>
 
-        </div>
-      </section>
+      <div className="flex items-center gap-3 mb-2 flex-wrap">
+        <h3 className="text-xl font-bold tracking-tight text-[#415762]">
+          Bridal Makeup
+        </h3>
 
-      {/* ================= HOME TWO COMPONENT APPENDED HERE ================= */}
+        <span
+          className="text-black text-[10px] font-bold px-2 py-0.5 rounded-[10px] uppercase tracking-wide"
+          style={{ backgroundColor: "#dcfb82" }}
+        >
+          Most trusted!
+        </span>
+      </div>
+
+      <p className="text-[13px] text-gray-500 leading-relaxed font-medium mb-1">
+        Your wedding day needs precision.
+      </p>
+
+      <p className="text-[13px] text-gray-500 leading-relaxed font-medium mb-5">
+        We create bridal looks that suit your face, outfit, and occasion.
+        The makeup stays for long hours and looks natural in person while
+        also appearing perfect on camera.
+      </p>
+    </div>
+
+    {/* Card 2 */}
+    <div className="flex flex-col group h-full">
+      <div className="bg-gray-100 rounded-[2rem] h-64 md:h-72 w-full mb-6 overflow-hidden">
+        <img
+          src={HeroTwo}
+          alt="Laser Hair Removal"
+          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+        />
+      </div>
+
+      <h3 className="text-xl font-bold mb-2 tracking-tight text-[#415762]">
+        Laser Hair Removal
+      </h3>
+
+      <p className="text-[13px] text-gray-500 leading-relaxed font-medium mb-1">
+        Tired of waxing again and again?
+      </p>
+
+      <p className="text-[13px] text-gray-500 leading-relaxed font-medium mb-5">
+        Our laser hair removal treatments help reduce hair growth over time.
+        It also helps avoid ingrown hair and skin irritation. Safe,
+        hygienic, and handled based on your skin type.
+      </p>
+    </div>
+
+    {/* Card 3 */}
+    <div className="flex flex-col group h-full">
+      <div className="bg-gray-100 rounded-[2rem] h-64 md:h-72 w-full mb-6 overflow-hidden">
+        <img
+          src={HeroThree}
+          alt="Hydra Facial"
+          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+        />
+      </div>
+
+      <h3 className="text-xl font-bold mb-2 tracking-tight text-[#415762]">
+        Hydra Facial
+      </h3>
+
+      <p className="text-[13px] text-gray-500 leading-relaxed font-medium mb-1">
+        Your skin needs more than basic care.
+      </p>
+
+      <p className="text-[13px] text-gray-500 leading-relaxed font-medium mb-5">
+        Hydra facial helps clean pores deeply, hydrate the skin, and improve
+        overall glow and texture. Ideal before events or as a regular
+        skincare routine.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+
       <HomeTwo />
 
     </div>

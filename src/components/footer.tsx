@@ -56,7 +56,10 @@ const Footer = () => {
   ];
 
   return (
-<footer className="w-full bg-[#050505] text-white pt-16 pb-8 px-6 lg:px-16 border-t border-[#2A2A2A]">
+<footer
+  id="footer"
+  className="w-full bg-[#050505] text-white pt-16 pb-8 px-6 lg:px-16 border-t border-[#2A2A2A]"
+>
   <div className="w-full">
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 lg:gap-20 mb-8">

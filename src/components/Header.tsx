@@ -17,9 +17,17 @@ const Header = () => {
 
         {/* Right: Contact Button */}
         <div className="flex items-center ml-auto">
-          <button className="bg-[#111111] hover:bg-black text-white text-sm font-medium px-5 py-2.5 rounded-lg transition-colors">
-            Contact
-          </button>
+        <button
+  onClick={() => {
+    document.getElementById("footer")?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  }}
+  className="bg-[#111111] hover:bg-black text-white text-sm font-medium px-5 py-2.5 rounded-lg transition-colors"
+>
+  Contact
+</button>
         </div>
 
       </div>
