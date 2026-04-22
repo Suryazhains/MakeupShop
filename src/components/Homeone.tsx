@@ -1,29 +1,23 @@
 
 import Header from './Header';
-import HomeTwo from './HomeTwo'; // Imported HomeTwo here
-
-// Image Imports
-import Boy from '../assets/ill.svg';
-import HeroOne from '../assets/equiment4.png';
-import HeroTwo from '../assets/equiment4.png';
-import HeroThree from '../assets/equiment5.png';
-import HomeImage from '../assets/equiment4.png';
+import HomeTwo from './HomeTwo';
+import Boy from '../assets/ill.png';
+import HeroOne from '../assets/home1.png';
+import HeroTwo from '../assets/home2.png';
+import HeroThree from '../assets/home3.png';
+import HomeImage from '../assets/HeroBackground.png';
 import StarIcon from '../assets/star.png';
 
 const HomeOne = () => {
   return (
     <div className="w-full bg-white font-sans overflow-x-hidden">
       <Header />
-
-
-      <section className="relative w-full bg-white flex flex-col items-center pt-28 pb-20 px-6 md:px-16 lg:px-24">
-
-        {/* Floating Boy Illustration */}
+<section className="relative w-full bg-white flex flex-col items-center pt-28 pb-20 px-6 md:px-16 lg:px-24">
         <div className="absolute left-4 md:left-10 lg:left-[3%] xl:left-[6%] top-[22rem] hidden lg:block z-20">
           <img
             src={Boy}
             alt="Illustrative boy character walking with flags"
-            className="w-[15rem] h-auto object-contain"
+            className="w-[25rem] h-auto object-contain"
           />
         </div>
 
@@ -42,16 +36,19 @@ const HomeOne = () => {
           </div>
 
           {/* ── Main Headline ── */}
-          <h1 className="text-5xl md:text-[64px] lg:text-[72px] font-semibold text-[#16171d] tracking-[-0.04em] leading-[1.02] mb-6">
-            Bridal{" "}
-            <span className="relative inline-block whitespace-nowrap">
-              <span className="relative z-10 drop-shadow-[0_2px_0_rgba(0,0,0,0.02)]">
-                Perfection.
-              </span>
+    <h1 className="text-5xl md:text-[64px] lg:text-[72px] font-semibold text-[#16171d] tracking-[-0.04em] leading-[1.02] mb-6">
 
-              {/* Exact green brush highlight */}
-              <span className="absolute left-[-52%] bottom-[14%] w-[136%] h-[38%] bg-[#d9f97b] rounded-full -rotate-[1deg] blur-[0.2px] -z-10 shadow-[0_2px_8px_rgba(217,249,123,0.35)]"></span>
-            </span>
+  <span className="relative inline-block whitespace-nowrap">
+    
+    <span className="relative z-10">
+      Bridal Perfection.
+    </span>
+
+    <span
+      className="absolute left-0 right-0 bottom-[16%] h-[36%] bg-[#d9f97b] rounded-full -rotate-[1deg] blur-[0.3px] -z-10"
+    ></span>
+
+  </span>
 
             <br />
 
@@ -60,7 +57,7 @@ const HomeOne = () => {
             </span>
 
             <br />
-            {/* Line 3 — pink drawn loop around "Confident You." */}
+     
             <span className="relative inline-block mt-2">
               <span className="relative z-10">Confident You.</span>
               <svg
@@ -140,8 +137,6 @@ const HomeOne = () => {
       />
     </span>
   </h2>
-
-  {/* Get Demo Button with Modern Computer Icon */}
   <button className="bg-[#111111] text-white px-5 py-2.5 rounded-xl text-sm font-medium mb-16 hover:bg-black transition-colors flex items-center gap-2 shadow-sm">
     <svg
       width="16"
@@ -175,7 +170,7 @@ const HomeOne = () => {
       </div>
 
       <div className="flex items-center gap-3 mb-2 flex-wrap">
-        <h3 className="text-xl font-bold tracking-tight text-[#415762]">
+        <h3 className="text-xl font-medium tracking-tight text-[#415762]">
           Bridal Makeup
         </h3>
 
@@ -208,7 +203,7 @@ const HomeOne = () => {
         />
       </div>
 
-      <h3 className="text-xl font-bold mb-2 tracking-tight text-[#415762]">
+      <h3 className="text-xl font-medium mb-2 tracking-tight text-[#415762]">
         Laser Hair Removal
       </h3>
 
@@ -233,7 +228,7 @@ const HomeOne = () => {
         />
       </div>
 
-      <h3 className="text-xl font-bold mb-2 tracking-tight text-[#415762]">
+      <h3 className="text-xl font-medium mb-2 tracking-tight text-[#415762]">
         Hydra Facial
       </h3>
 

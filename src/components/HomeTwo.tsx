@@ -3,15 +3,15 @@ import Footer from './footer';
 // Image Imports
 import ImageYellowBox from '../assets/equiment3.png'; 
 import ImageWhiteGraphic from '../assets/equiment4.png'; 
-import IconScissors from '../assets/icon1.png'; 
-import IconShieldFace from '../assets/icon2.png'; 
-import IconNailPolish from '../assets/icon5.png'; 
-import IconStar from '../assets/icon4.png'; 
+import IconScissors from '../assets/Scissor.svg'; 
+import IconShieldFace from '../assets/Nail-1.svg'; 
+import IconNailPolish from '../assets/Nail.svg'; 
+import IconStar from '../assets/Face.svg'; 
 import IconDiamond from '../assets/icon7.png'; 
 import IconSparkles from '../assets/icon9.png'; 
 import IconCare from '../assets/icon10.png'; 
 import IconCleanPractices from '../assets/icon11.png'; 
-import DrawnArrow from '../assets/icon6.png'; 
+
 
 // "Why Choose Us" Imports
 import WhyChooseIcon from '../assets/whychoose.png'; 
@@ -59,9 +59,7 @@ const HomeTwo = () => {
           </div>
 
           <div className="w-full lg:w-[52%] relative flex flex-col items-start text-left lg:pl-8 xl:pl-16 justify-center">
-            <div className="absolute -top-30 -right-30 hidden md:block pointer-events-none">
-              <img src={DrawnArrow} alt="" className="w-46 h-46 object-contain " />
-            </div>
+      
 
             {/* INCREASED CENTER GAP: mb-24 on mobile, mb-36 on desktop */}
             <div className="flex flex-col mb-24 lg:mb-36 w-full">
@@ -267,31 +265,34 @@ const HomeTwo = () => {
             </div>
             
             <div className="w-full flex justify-center lg:justify-start">
-              <button
-                onClick={() => {
-                  document.getElementById("footer")?.scrollIntoView({
-                    behavior: "smooth",
-                    block: "start",
-                  });
-                }}
-                className="bg-[#1c1c1e] hover:bg-black text-white text-[16px] font-medium px-8 py-4 rounded-2xl shadow-sm transition-transform hover:scale-105 flex items-center gap-3"
-              >
-                <svg
-                  width="20"
-                  height="20"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
-                  <line x1="8" y1="21" x2="16" y2="21"></line>
-                  <line x1="12" y1="17" x2="12" y2="21"></line>
-                </svg>
-                Contact Now
-              </button>
+<div className="w-full flex justify-center">
+  <button
+    onClick={() => {
+      document.getElementById("footer")?.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }}
+    className="bg-[#1c1c1e] hover:bg-black text-white text-[16px] font-medium px-8 py-4 rounded-2xl shadow-sm transition-transform hover:scale-105 flex items-center justify-center gap-3"
+  >
+    <svg
+      width="20"
+      height="20"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+      <line x1="8" y1="21" x2="16" y2="21"></line>
+      <line x1="12" y1="17" x2="12" y2="21"></line>
+    </svg>
+
+    Contact Now
+  </button>
+</div>
             </div>
           </div>
 
