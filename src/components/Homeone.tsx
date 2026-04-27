@@ -6,7 +6,7 @@ import HeroOne from '../assets/home1.png';
 import HeroTwo from '../assets/home2.png';
 import HeroThree from '../assets/home3.png';
 import HomeImage from '../assets/HeroBackground.png';
-import StarIcon from '../assets/star.png';
+// import StarIcon from '../assets/star.png';
 
 const HomeOne = () => {
   return (
@@ -120,9 +120,9 @@ const HomeOne = () => {
   <section className="w-full bg-white text-gray-900 flex flex-col items-center pt-10 pb-28 px-6 md:px-16 lg:px-24">
 
   {/* Star / Geometric Icon */}
-  <div className="mb-6 flex justify-center">
+  {/* <div className="mb-6 flex justify-center">
     <img src={StarIcon} alt="Star Icon" className="w-20 h-20 object-contain" />
-  </div>
+  </div> */}
 
   {/* Heading */}
   <h2 className="text-4xl md:text-[3rem] font-medium text-center mb-8 leading-[1.1] max-w-2xl tracking-tight">
@@ -137,24 +137,7 @@ const HomeOne = () => {
       />
     </span>
   </h2>
-  <button className="bg-[#111111] text-white px-5 py-2.5 rounded-xl text-sm font-medium mb-16 hover:bg-black transition-colors flex items-center gap-2 shadow-sm">
-    <svg
-      width="16"
-      height="16"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <rect x="3" y="4" width="18" height="12" rx="2.5"></rect>
-      <path d="M8 20h8"></path>
-      <path d="M12 16v4"></path>
-    </svg>
 
-    Get a demo
-  </button>
 
   {/* Service Cards */}
   <div className="grid grid-cols-1 md:grid-cols-3 gap-10 lg:gap-14 w-full max-w-[1400px] items-start">

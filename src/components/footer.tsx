@@ -1,5 +1,4 @@
-
-import logoImg from '../assets/icon1.png'; 
+import logoImg from '../assets/logoHeader.svg'; 
 
 const InstagramIcon = ({ className }: { className?: string }) => (
   <svg 
@@ -52,30 +51,32 @@ const PhoneIcon = ({ className }: { className?: string }) => (
 const Footer = () => {
   const socialLinks = [
     { name: 'Email', icon: EmailIcon, url: 'mailto:reverenceac@gmail.com' },
-    { name: 'Instagram', icon: InstagramIcon, url: 'https://www.instagram.com/spectraairconditioning' },
+    { name: 'Instagram', icon: InstagramIcon, url: 'https://www.instagram.com/premi_beauty_parlour_/' },
   ];
 
   return (
-<footer
-  id="footer"
-  className="w-full bg-[#050505] text-white pt-16 pb-8 px-6 lg:px-16 border-t border-[#2A2A2A]"
->
-  <div className="w-full">
+    <footer
+      id="footer"
+      className="w-full bg-[#050505] text-white pt-16 pb-8 px-6 lg:px-16 border-t border-[#2A2A2A]"
+    >
+      <div className="w-full">
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 lg:gap-20 mb-8">
           
           {/* Column 1: Brand & Socials */}
           <div className="flex flex-col">
-            <div className="flex items-start mb-6">
-              <img 
-                src={logoImg} 
-                alt="Spectra Logo" 
-                className="w-[180px] md:w-[280px] h-auto object-contain" 
-              />
-            </div>
+          <div className="flex flex-col">
+  <div className="flex items-start mb-6">
+    <img 
+      src={logoImg} 
+      alt="Logo" 
+      className="w-[180px] md:w-[280px] h-auto object-contain brightness-0 invert"
+    />
+  </div>
+</div>
 
             <p className="text-[#999999] text-[13px] leading-[22px] max-w-[280px] mb-8">
-              For environments that can't afford failure, Spectra delivers HVAC systems that perform without pause.
+              For environments that can't afford failure, we deliver systems that perform without pause.
             </p>
             
             <div className="flex gap-4">
@@ -107,22 +108,10 @@ const Footer = () => {
                   <PhoneIcon className="w-5 h-5" />
                 </div>
                 <a
-                  href="tel:+919444500050"
+                  href="tel:+919487416428"
                   className="text-[#999999] text-[14px] group-hover:text-white transition-colors cursor-pointer"
                 >
-                  +91 94445 00050
-                </a>
-              </div>
-
-              <div className="flex items-start gap-4 group">
-                <div className="mt-0.5 text-[#999999] group-hover:text-white transition-colors">
-                  <PhoneIcon className="w-5 h-5" />
-                </div>
-                <a
-                  href="tel:+919363640050"
-                  className="text-[#999999] text-[14px] group-hover:text-white transition-colors cursor-pointer"
-                >
-                  +91 93636 40050
+                  +91 94874 16428
                 </a>
               </div>
             </div>
@@ -144,13 +133,16 @@ const Footer = () => {
           <div className="flex flex-col pt-1">
             <h4 className="text-[16px] font-semibold text-white mb-6">Our Location</h4>
             <div className="w-full max-w-[344px] h-[100px] rounded-2xl overflow-hidden relative border border-[#2A2A2A] bg-[#1A1A1A]">
+              
+              {/* Updated iframe src with Google Maps embed URL for Premi Beauty Parlour */}
               <iframe 
-                title="Spectra AC Solutions Location"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.840742137532!2d80.2104169750777!3d13.045814587276707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5266ec48074d09%3A0xc3910c273873495d!2sSpectra%20Air%20Conditioning!5e0!3m2!1sen!2sin!4v1709635000000!5m2!1sen!2sin"
+                title="Location Map"
+                src="https://maps.google.com/maps?q=Premi%20Beauty%20Parlour,%20Vandimedu,%20Viluppuram,%20Tamil%20Nadu&t=&z=15&ie=UTF8&iwloc=&output=embed"
                 className="w-full h-full border-0"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
               ></iframe>
+
             </div>
           </div>
         </div>
@@ -168,6 +160,6 @@ const Footer = () => {
       </div>
     </footer>
   );
-};
+}; 
 
 export default Footer;

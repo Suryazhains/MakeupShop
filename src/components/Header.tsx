@@ -1,5 +1,5 @@
 
-import ImageOne from '../assets/hero.png';
+import ImageOne from '../assets/logoHeader.svg';
 
 const Header = () => {
   return (
@@ -11,7 +11,7 @@ const Header = () => {
           <img
             src={ImageOne}
             alt="Logo"
-            className="h-8 object-contain"
+            className="h-26 object-contain"
           />
         </div>
 
