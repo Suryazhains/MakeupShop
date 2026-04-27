@@ -79,7 +79,7 @@ const Footer = () => {
               For environments that can't afford failure, we deliver systems that perform without pause.
             </p>
             
-            <div className="flex gap-4">
+            {/* <div className="flex gap-4">
               {socialLinks.map((social, i) => {
                 const IconComponent = social.icon;
                 return (
@@ -95,7 +95,7 @@ const Footer = () => {
                   </a>
                 );
               })}
-            </div>
+            </div> */}
           </div>
 
           {/* Column 2: Contact Info */}
@@ -118,13 +118,15 @@ const Footer = () => {
 
             <div className="flex items-start gap-4 group">
               <div className="mt-0.5 text-[#999999] group-hover:text-white transition-colors">
-                <EmailIcon className="w-5 h-5" />
+                <InstagramIcon className="w-5 h-5" />
               </div>
               <a 
-                href="mailto:airconspectra@gmail.com" 
+                href="https://www.instagram.com/premi_beauty_parlour_/" 
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-[#999999] text-[14px] group-hover:text-white transition-colors cursor-pointer"
               >
-                airconspectra@gmail.com
+                @premi_beauty_parlour_
               </a>
             </div>
           </div>
