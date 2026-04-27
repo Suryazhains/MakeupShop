@@ -4,8 +4,8 @@ import Boy from '../assets/ill.png';
 import HeroOne from '../assets/home1.png';
 import HeroTwo from '../assets/home2.png';
 import HeroThree from '../assets/home3.png';
-import HomeImage from '../assets/HeroBackground.png';
-// import StarIcon from '../assets/star.png';
+// NOTE: Make sure HeroBackground.png has been moved to your public folder!
+// If you left it in src/assets, change the src below back to the imported variable.
 
 const HomeOne = () => {
   return (
@@ -102,9 +102,9 @@ const HomeOne = () => {
         </div>
 
         {/* Full-width Hero Image */}
-        <div className="w-full max-w-[1440px] mt-20 bg-white rounded-3xl border border-gray-200 aspect-[16/9] shadow-sm overflow-hidden z-10 mx-auto">
+        <div className="w-full max-w-[1440px] mt-20 bg-gray-100 rounded-3xl border border-gray-200 aspect-[16/9] shadow-sm overflow-hidden z-10 mx-auto">
           <img
-            src={HomeImage}
+            src="/HeroBackground.png" 
             alt="Parlor showcase"
             className="w-full h-full object-cover"
             fetchPriority="high"
@@ -123,11 +123,6 @@ const HomeOne = () => {
 
 
       <section className="w-full bg-white text-gray-900 flex flex-col items-center pt-10 pb-28 px-6 md:px-16 lg:px-24">
-
-        {/* Star / Geometric Icon */}
-        {/* <div className="mb-6 flex justify-center">
-          <img src={StarIcon} alt="Star Icon" className="w-20 h-20 object-contain" />
-        </div> */}
 
         {/* Heading */}
         <h2 className="text-4xl md:text-[3rem] font-medium text-center mb-8 leading-[1.1] max-w-2xl tracking-tight">
