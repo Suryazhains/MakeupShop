@@ -154,8 +154,9 @@ const HomeOne = () => {
                 src={HeroOne}
                 alt="Bridal Makeup"
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                loading="lazy"
-                decoding="async"
+                fetchPriority="high"
+                loading="eager"
+                decoding="sync"
               />
             </div>
 
@@ -190,8 +191,9 @@ const HomeOne = () => {
                 src={HeroTwo}
                 alt="Laser Hair Removal"
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                loading="lazy"
-                decoding="async"
+                fetchPriority="high"
+                loading="eager"
+                decoding="sync"
               />
             </div>
 
@@ -217,8 +219,9 @@ const HomeOne = () => {
                 src={HeroThree}
                 alt="Hydra Facial"
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                loading="lazy"
-                decoding="async"
+                fetchPriority="high"
+                loading="eager"
+                decoding="sync"
               />
             </div>
 
