@@ -71,6 +71,9 @@ const HomeTwo = () => {
               src={ImageYellowBox} 
               alt="Complete Beauty Care" 
               className="w-full h-full object-cover" 
+              fetchPriority="high"
+              loading="eager"
+              decoding="sync"
             />
           </div>
 
@@ -89,7 +92,7 @@ const HomeTwo = () => {
 
             <div className="grid grid-cols-2 gap-x-6 md:gap-x-12 gap-y-12 w-full">
               <div className="flex flex-col items-start">
-                <img src={IconScissors} alt="" className="-ml-1.5 w-7 h-7 md:w-12 md:h-12 object-contain object-left mb-4 opacity-90" />
+                <img src={IconScissors} alt="" className="-ml-1.5 w-7 h-7 md:w-12 md:h-12 object-contain object-left mb-4 opacity-90" loading="eager" decoding="sync" />
                 <h3 className="text-[14px] md:text-[15px] font-semibold text-[#111111] mb-1.5 tracking-tight">Haircuts and styling</h3>
                 <p className="text-[13px] md:text-[14px] text-gray-500 font-medium leading-relaxed max-w-[200px]">
                   Shaped to suit your face and easy to maintain daily
@@ -97,7 +100,7 @@ const HomeTwo = () => {
               </div>
 
               <div className="flex flex-col items-start">
-                <img src={IconShieldFace} alt="" className="-ml-1.5 w-7 h-7 md:w-12 md:h-12 object-contain object-left mb-4 opacity-90" />
+                <img src={IconShieldFace} alt="" className="-ml-1.5 w-7 h-7 md:w-12 md:h-12 object-contain object-left mb-4 opacity-90" loading="eager" decoding="sync" />
                 <h3 className="text-[14px] md:text-[15px] font-semibold text-[#111111] mb-1.5 tracking-tight">Threading and grooming</h3>
                 <p className="text-[13px] md:text-[14px] text-gray-500 font-medium leading-relaxed max-w-[200px]">
                   Clean, precise grooming for a neat and polished look
@@ -105,7 +108,7 @@ const HomeTwo = () => {
               </div>
 
               <div className="flex flex-col items-start">
-                <img src={IconNailPolish} alt="" className="-ml-1.5 w-7 h-7 md:w-12 md:h-12 object-contain object-left mb-4 opacity-90" />
+                <img src={IconNailPolish} alt="" className="-ml-1.5 w-7 h-7 md:w-12 md:h-12 object-contain object-left mb-4 opacity-90" loading="eager" decoding="sync" />
                 <h3 className="text-[14px] md:text-[15px] font-semibold text-[#111111] mb-1.5 tracking-tight">Manicure and pedicure</h3>
                 <p className="text-[13px] md:text-[14px] text-gray-500 font-medium leading-relaxed max-w-[200px]">
                   Care that keeps your hands and feet clean and refreshed
@@ -113,7 +116,7 @@ const HomeTwo = () => {
               </div>
 
               <div className="flex flex-col items-start">
-                <img src={IconStar} alt="" className="-ml-1.5 w-7 h-7 md:w-12 md:h-12 object-contain object-left mb-4 opacity-90" />
+                <img src={IconStar} alt="" className="-ml-1.5 w-7 h-7 md:w-12 md:h-12 object-contain object-left mb-4 opacity-90" loading="eager" decoding="sync" />
                 <h3 className="text-[14px] md:text-[15px] font-semibold text-[#111111] mb-1.5 tracking-tight">Facial and bleach</h3>
                 <p className="text-[13px] md:text-[14px] text-gray-500 font-medium leading-relaxed max-w-[200px]">
                   Skin care that improves tone, texture, and overall glow
@@ -133,6 +136,8 @@ const HomeTwo = () => {
               src={ImageWhiteGraphic} 
               alt="Piercing and Warts Removal" 
               className="w-full h-full object-cover mix-blend-multiply opacity-90" 
+              loading="lazy"
+              decoding="async"
             />
           </div>
 
@@ -152,7 +157,7 @@ const HomeTwo = () => {
               
               {/* Uses new separate icons imported specifically for this section */}
               <div className="flex flex-col items-start">
-                <img src={IconSafe} alt="" className="-ml-1.5 w-7 h-7 md:w-8 md:h-8 object-contain object-left mb-4 opacity-90" />
+                <img src={IconSafe} alt="" className="-ml-1.5 w-7 h-7 md:w-8 md:h-8 object-contain object-left mb-4 opacity-90" loading="lazy" decoding="async" />
                 <h3 className="text-[14px] md:text-[15px] font-semibold text-[#111111] mb-1.5 tracking-tight">Safe & Hygienic</h3>
                 <p className="text-[13px] md:text-[14px] text-gray-500 font-medium leading-relaxed max-w-[200px]">
                   Safe and hygienic ear and nose piercing
@@ -160,7 +165,7 @@ const HomeTwo = () => {
               </div>
 
               <div className="flex flex-col items-start">
-                <img src={IconQuick} alt="" className="-ml-1.5 w-7 h-7 md:w-8 md:h-8 object-contain object-left mb-4 opacity-90" />
+                <img src={IconQuick} alt="" className="-ml-1.5 w-7 h-7 md:w-8 md:h-8 object-contain object-left mb-4 opacity-90" loading="lazy" decoding="async" />
                 <h3 className="text-[14px] md:text-[15px] font-semibold text-[#111111] mb-1.5 tracking-tight">Quick & Painless</h3>
                 <p className="text-[13px] md:text-[14px] text-gray-500 font-medium leading-relaxed max-w-[200px]">
                   Quick, painless and careful warts removal procedures
@@ -168,7 +173,7 @@ const HomeTwo = () => {
               </div>
 
               <div className="flex flex-col items-start">
-                <img src={IconCare} alt="" className="-ml-1.5 w-7 h-7 md:w-8 md:h-8 object-contain object-left mb-4 opacity-90" />
+                <img src={IconCare} alt="" className="-ml-1.5 w-7 h-7 md:w-8 md:h-8 object-contain object-left mb-4 opacity-90" loading="lazy" decoding="async" />
                 <h3 className="text-[14px] md:text-[15px] font-semibold text-[#111111] mb-1.5 tracking-tight">Proper Care</h3>
                 <p className="text-[13px] md:text-[14px] text-gray-500 font-medium leading-relaxed max-w-[200px]">
                   Handled with proper care to avoid discomfort
@@ -176,7 +181,7 @@ const HomeTwo = () => {
               </div>
 
               <div className="flex flex-col items-start">
-                <img src={IconAge} alt="" className="-ml-1.5 w-7 h-7 md:w-8 md:h-8 object-contain object-left mb-4 opacity-90" />
+                <img src={IconAge} alt="" className="-ml-1.5 w-7 h-7 md:w-8 md:h-8 object-contain object-left mb-4 opacity-90" loading="lazy" decoding="async" />
                 <h3 className="text-[14px] md:text-[15px] font-semibold text-[#111111] mb-1.5 tracking-tight">All Age Groups</h3>
                 <p className="text-[13px] md:text-[14px] text-gray-500 font-medium leading-relaxed max-w-[200px]">
                   Suitable for all age groups with clean practices
@@ -303,6 +308,8 @@ const HomeTwo = () => {
                 src={WhyChooseImage}
                 alt="Portrait of a woman"
                 className="w-full h-full object-cover"
+                loading="lazy"
+                decoding="async"
               />
             </div>
             
@@ -357,7 +364,7 @@ const HomeTwo = () => {
             <div className="flex shrink-0">
               {workImages.map((img, idx) => (
                 <div key={`set1-${idx}`} className="w-[320px] h-[320px] md:w-[380px] md:h-[380px] mr-6 rounded-[1.5rem] overflow-hidden">
-                  <img src={img} alt={`Work ${idx + 1}`} className="w-full h-full object-cover" />
+                  <img src={img} alt={`Work ${idx + 1}`} className="w-full h-full object-cover" fetchPriority="high" loading="eager" decoding="async" />
                 </div>
               ))}
             </div>
@@ -366,7 +373,7 @@ const HomeTwo = () => {
             <div className="flex shrink-0">
               {workImages.map((img, idx) => (
                 <div key={`set2-${idx}`} className="w-[320px] h-[320px] md:w-[380px] md:h-[380px] mr-6 rounded-[1.5rem] overflow-hidden">
-                  <img src={img} alt={`Work ${idx + 1}`} className="w-full h-full object-cover" />
+                  <img src={img} alt={`Work ${idx + 1}`} className="w-full h-full object-cover" fetchPriority="high" loading="eager" decoding="async" />
                 </div>
               ))}
             </div>

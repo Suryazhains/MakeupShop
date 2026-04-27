@@ -1,4 +1,3 @@
-
 import Header from './Header';
 import HomeTwo from './HomeTwo';
 import Boy from '../assets/ill.png';
@@ -12,12 +11,15 @@ const HomeOne = () => {
   return (
     <div className="w-full bg-white font-sans overflow-x-hidden">
       <Header />
-<section className="relative w-full bg-white flex flex-col items-center pt-28 pb-20 px-6 md:px-16 lg:px-24">
+      <section className="relative w-full bg-white flex flex-col items-center pt-28 pb-20 px-6 md:px-16 lg:px-24">
         <div className="absolute left-4 md:left-10 lg:left-[3%] xl:left-[6%] top-[22rem] hidden lg:block z-20">
           <img
             src={Boy}
             alt="Illustrative boy character walking with flags"
             className="w-[25rem] h-auto object-contain"
+            fetchPriority="high"
+            loading="eager"
+            decoding="sync"
           />
         </div>
 
@@ -36,19 +38,19 @@ const HomeOne = () => {
           </div>
 
           {/* ── Main Headline ── */}
-    <h1 className="text-5xl md:text-[64px] lg:text-[72px] font-semibold text-[#16171d] tracking-[-0.04em] leading-[1.02] mb-6">
+          <h1 className="text-5xl md:text-[64px] lg:text-[72px] font-semibold text-[#16171d] tracking-[-0.04em] leading-[1.02] mb-6">
 
-  <span className="relative inline-block whitespace-nowrap">
-    
-    <span className="relative z-10">
-      Bridal Perfection.
-    </span>
+            <span className="relative inline-block whitespace-nowrap">
+              
+              <span className="relative z-10">
+                Bridal Perfection.
+              </span>
 
-    <span
-      className="absolute left-0 right-0 bottom-[16%] h-[36%] bg-[#d9f97b] rounded-full -rotate-[1deg] blur-[0.3px] -z-10"
-    ></span>
+              <span
+                className="absolute left-0 right-0 bottom-[16%] h-[36%] bg-[#d9f97b] rounded-full -rotate-[1deg] blur-[0.3px] -z-10"
+              ></span>
 
-  </span>
+            </span>
 
             <br />
 
@@ -87,16 +89,16 @@ const HomeOne = () => {
 
           {/* CTA Button */}
          <button
-  onClick={() => {
-    document.getElementById("footer")?.scrollIntoView({
-      behavior: "smooth",
-      block: "start",
-    });
-  }}
-  className="bg-[#111111] hover:bg-black text-white text-[15px] font-medium px-8 py-3.5 rounded-[14px] shadow-sm transition-transform hover:scale-105 active:scale-95"
->
-  Contact now
-</button>
+            onClick={() => {
+              document.getElementById("footer")?.scrollIntoView({
+                behavior: "smooth",
+                block: "start",
+              });
+            }}
+            className="bg-[#111111] hover:bg-black text-white text-[15px] font-medium px-8 py-3.5 rounded-[14px] shadow-sm transition-transform hover:scale-105 active:scale-95"
+          >
+            Contact now
+          </button>
         </div>
 
         {/* Full-width Hero Image */}
@@ -105,6 +107,9 @@ const HomeOne = () => {
             src={HomeImage}
             alt="Parlor showcase"
             className="w-full h-full object-cover"
+            fetchPriority="high"
+            loading="eager"
+            decoding="sync"
           />
         </div>
       </section>
@@ -117,118 +122,123 @@ const HomeOne = () => {
       </div>
 
 
-  <section className="w-full bg-white text-gray-900 flex flex-col items-center pt-10 pb-28 px-6 md:px-16 lg:px-24">
+      <section className="w-full bg-white text-gray-900 flex flex-col items-center pt-10 pb-28 px-6 md:px-16 lg:px-24">
 
-  {/* Star / Geometric Icon */}
-  {/* <div className="mb-6 flex justify-center">
-    <img src={StarIcon} alt="Star Icon" className="w-20 h-20 object-contain" />
-  </div> */}
+        {/* Star / Geometric Icon */}
+        {/* <div className="mb-6 flex justify-center">
+          <img src={StarIcon} alt="Star Icon" className="w-20 h-20 object-contain" />
+        </div> */}
 
-  {/* Heading */}
-  <h2 className="text-4xl md:text-[3rem] font-medium text-center mb-8 leading-[1.1] max-w-2xl tracking-tight">
-    Everything you <br />
-    need, all in{" "}
-    <span className="relative inline-block whitespace-nowrap isolate">
-      <span className="relative z-10">one place</span>
+        {/* Heading */}
+        <h2 className="text-4xl md:text-[3rem] font-medium text-center mb-8 leading-[1.1] max-w-2xl tracking-tight">
+          Everything you <br />
+          need, all in{" "}
+          <span className="relative inline-block whitespace-nowrap isolate">
+            <span className="relative z-10">one place</span>
 
-      <span
-        className="absolute bottom-[8%] left-[2%] w-[94%] h-[55%] z-0 rounded-[10px] -rotate-1"
-        style={{ backgroundColor: "#dcfb82" }}
-      />
-    </span>
-  </h2>
+            <span
+              className="absolute bottom-[8%] left-[2%] w-[94%] h-[55%] z-0 rounded-[10px] -rotate-1"
+              style={{ backgroundColor: "#dcfb82" }}
+            />
+          </span>
+        </h2>
 
 
-  {/* Service Cards */}
-  <div className="grid grid-cols-1 md:grid-cols-3 gap-10 lg:gap-14 w-full max-w-[1400px] items-start">
+        {/* Service Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 lg:gap-14 w-full max-w-[1400px] items-start">
 
-    {/* Card 1 */}
-    <div className="flex flex-col group h-full">
-      <div className="bg-gray-100 rounded-[2rem] h-64 md:h-72 w-full mb-6 overflow-hidden">
-        <img
-          src={HeroOne}
-          alt="Bridal Makeup"
-          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-        />
-      </div>
+          {/* Card 1 */}
+          <div className="flex flex-col group h-full">
+            <div className="bg-gray-100 rounded-[2rem] h-64 md:h-72 w-full mb-6 overflow-hidden">
+              <img
+                src={HeroOne}
+                alt="Bridal Makeup"
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
 
-      <div className="flex items-center gap-3 mb-2 flex-wrap">
-        <h3 className="text-xl font-medium tracking-tight text-[#415762]">
-          Bridal Makeup
-        </h3>
+            <div className="flex items-center gap-3 mb-2 flex-wrap">
+              <h3 className="text-xl font-medium tracking-tight text-[#415762]">
+                Bridal Makeup
+              </h3>
 
-        <span
-          className="text-black text-[10px] font-bold px-2 py-0.5 rounded-[10px] uppercase tracking-wide"
-          style={{ backgroundColor: "#dcfb82" }}
-        >
-          Most trusted!
-        </span>
-      </div>
+              <span
+                className="text-black text-[10px] font-bold px-2 py-0.5 rounded-[10px] uppercase tracking-wide"
+                style={{ backgroundColor: "#dcfb82" }}
+              >
+                Most trusted!
+              </span>
+            </div>
 
-      <p className="text-[13px] text-gray-500 leading-relaxed font-medium mb-1">
-        Your wedding day needs precision.
-      </p>
+            <p className="text-[13px] text-gray-500 leading-relaxed font-medium mb-1">
+              Your wedding day needs precision.
+            </p>
 
-      <p className="text-[13px] text-gray-500 leading-relaxed font-medium mb-5">
-        We create bridal looks that suit your face, outfit, and occasion.
-        The makeup stays for long hours and looks natural in person while
-        also appearing perfect on camera.
-      </p>
-    </div>
+            <p className="text-[13px] text-gray-500 leading-relaxed font-medium mb-5">
+              We create bridal looks that suit your face, outfit, and occasion.
+              The makeup stays for long hours and looks natural in person while
+              also appearing perfect on camera.
+            </p>
+          </div>
 
-    {/* Card 2 */}
-    <div className="flex flex-col group h-full">
-      <div className="bg-gray-100 rounded-[2rem] h-64 md:h-72 w-full mb-6 overflow-hidden">
-        <img
-          src={HeroTwo}
-          alt="Laser Hair Removal"
-          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-        />
-      </div>
+          {/* Card 2 */}
+          <div className="flex flex-col group h-full">
+            <div className="bg-gray-100 rounded-[2rem] h-64 md:h-72 w-full mb-6 overflow-hidden">
+              <img
+                src={HeroTwo}
+                alt="Laser Hair Removal"
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
 
-      <h3 className="text-xl font-medium mb-2 tracking-tight text-[#415762]">
-        Laser Hair Removal
-      </h3>
+            <h3 className="text-xl font-medium mb-2 tracking-tight text-[#415762]">
+              Laser Hair Removal
+            </h3>
 
-      <p className="text-[13px] text-gray-500 leading-relaxed font-medium mb-1">
-        Tired of waxing again and again?
-      </p>
+            <p className="text-[13px] text-gray-500 leading-relaxed font-medium mb-1">
+              Tired of waxing again and again?
+            </p>
 
-      <p className="text-[13px] text-gray-500 leading-relaxed font-medium mb-5">
-        Our laser hair removal treatments help reduce hair growth over time.
-        It also helps avoid ingrown hair and skin irritation. Safe,
-        hygienic, and handled based on your skin type.
-      </p>
-    </div>
+            <p className="text-[13px] text-gray-500 leading-relaxed font-medium mb-5">
+              Our laser hair removal treatments help reduce hair growth over time.
+              It also helps avoid ingrown hair and skin irritation. Safe,
+              hygienic, and handled based on your skin type.
+            </p>
+          </div>
 
-    {/* Card 3 */}
-    <div className="flex flex-col group h-full">
-      <div className="bg-gray-100 rounded-[2rem] h-64 md:h-72 w-full mb-6 overflow-hidden">
-        <img
-          src={HeroThree}
-          alt="Hydra Facial"
-          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-        />
-      </div>
+          {/* Card 3 */}
+          <div className="flex flex-col group h-full">
+            <div className="bg-gray-100 rounded-[2rem] h-64 md:h-72 w-full mb-6 overflow-hidden">
+              <img
+                src={HeroThree}
+                alt="Hydra Facial"
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
 
-      <h3 className="text-xl font-medium mb-2 tracking-tight text-[#415762]">
-        Hydra Facial
-      </h3>
+            <h3 className="text-xl font-medium mb-2 tracking-tight text-[#415762]">
+              Hydra Facial
+            </h3>
 
-      <p className="text-[13px] text-gray-500 leading-relaxed font-medium mb-1">
-        Your skin needs more than basic care.
-      </p>
+            <p className="text-[13px] text-gray-500 leading-relaxed font-medium mb-1">
+              Your skin needs more than basic care.
+            </p>
 
-      <p className="text-[13px] text-gray-500 leading-relaxed font-medium mb-5">
-        Hydra facial helps clean pores deeply, hydrate the skin, and improve
-        overall glow and texture. Ideal before events or as a regular
-        skincare routine.
-      </p>
-    </div>
+            <p className="text-[13px] text-gray-500 leading-relaxed font-medium mb-5">
+              Hydra facial helps clean pores deeply, hydrate the skin, and improve
+              overall glow and texture. Ideal before events or as a regular
+              skincare routine.
+            </p>
+          </div>
 
-  </div>
-</section>
-
+        </div>
+      </section>
 
       <HomeTwo />
 
