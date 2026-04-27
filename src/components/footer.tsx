@@ -17,22 +17,6 @@ const InstagramIcon = ({ className }: { className?: string }) => (
   </svg>
 );
 
-const EmailIcon = ({ className }: { className?: string }) => (
-  <svg 
-    xmlns="http://www.w3.org/2000/svg" 
-    viewBox="0 0 24 24" 
-    fill="none" 
-    stroke="currentColor" 
-    strokeWidth="2" 
-    strokeLinecap="round" 
-    strokeLinejoin="round" 
-    className={className}
-  >
-    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-    <polyline points="22,6 12,13 2,6"></polyline>
-  </svg>
-);
-
 const PhoneIcon = ({ className }: { className?: string }) => (
   <svg 
     xmlns="http://www.w3.org/2000/svg" 
@@ -49,11 +33,6 @@ const PhoneIcon = ({ className }: { className?: string }) => (
 );
 
 const Footer = () => {
-  const socialLinks = [
-    { name: 'Email', icon: EmailIcon, url: 'mailto:reverenceac@gmail.com' },
-    { name: 'Instagram', icon: InstagramIcon, url: 'https://www.instagram.com/premi_beauty_parlour_/' },
-  ];
-
   return (
     <footer
       id="footer"
@@ -65,37 +44,19 @@ const Footer = () => {
           
           {/* Column 1: Brand & Socials */}
           <div className="flex flex-col">
-          <div className="flex flex-col">
-  <div className="flex items-start mb-6">
-    <img 
-      src={logoImg} 
-      alt="Logo" 
-      className="w-[180px] md:w-[280px] h-auto object-contain brightness-0 invert"
-    />
-  </div>
-</div>
+            <div className="flex flex-col">
+              <div className="flex items-start mb-6">
+                <img 
+                  src={logoImg} 
+                  alt="Logo" 
+                  className="w-[180px] md:w-[280px] h-auto object-contain brightness-0 invert"
+                />
+              </div>
+            </div>
 
             <p className="text-[#999999] text-[13px] leading-[22px] max-w-[280px] mb-8">
               For environments that can't afford failure, we deliver systems that perform without pause.
             </p>
-            
-            {/* <div className="flex gap-4">
-              {socialLinks.map((social, i) => {
-                const IconComponent = social.icon;
-                return (
-                  <a 
-                    key={i} 
-                    href={social.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center justify-center text-[#999999] hover:text-white transition-colors cursor-pointer"
-                    aria-label={social.name}
-                  >
-                    <IconComponent className="w-6 h-6" />
-                  </a>
-                );
-              })}
-            </div> */}
           </div>
 
           {/* Column 2: Contact Info */}
