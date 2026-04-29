@@ -11,8 +11,8 @@ const HomeOne = () => {
   return (
     <div className="w-full bg-white font-sans overflow-x-hidden">
       <Header />
-      <section className="relative w-full bg-white flex flex-col items-center pt-28 pb-20 px-6 md:px-16 lg:px-24">
-        <div className="absolute left-4 md:left-10 lg:left-[3%] xl:left-[6%] top-[22rem] hidden lg:block z-20">
+      <section className="relative w-full bg-white flex flex-col items-center pt-2 pb-20 px-6 md:px-16 lg:px-24">
+        <div className="absolute left-4 md:left-10 lg:left-[3%] xl:left-[6%] top-[16rem] hidden lg:block z-20">
           <img
             src={Boy}
             alt="Illustrative boy character walking with flags"
@@ -62,21 +62,7 @@ const HomeOne = () => {
      
             <span className="relative inline-block mt-2">
               <span className="relative z-10">Confident You.</span>
-              <svg
-                className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[115%] h-[160%] -z-10 pointer-events-none"
-                viewBox="0 0 220 65"
-                preserveAspectRatio="none"
-                style={{ color: '#f472b6' }}
-              >
-                <path
-                  d="M 28,50 C 8,28 195,8 210,32 C 222,52 25,68 15,44"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="4.5"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
+          
             </span>
           </h1>
 
