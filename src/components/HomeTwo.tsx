@@ -32,10 +32,12 @@ import Work10 from '../assets/work10.png';
 import Work11 from '../assets/work11.png'; 
 import Work12 from '../assets/work12.png'; 
 import Work13 from '../assets/work13.png'; 
-
+import Work14 from '../assets/work11.png'; 
+import Work15 from '../assets/work12.png'; 
+import Work16 from '../assets/work13.png'; 
 const workImages = [
   Work1, Work2, Work3, Work4, Work5, Work6, 
-  Work7, Work8, Work9, Work10, Work11, Work12, Work13
+  Work7, Work8, Work9, Work10, Work11, Work12, Work13,Work14,Work15,Work16
 ];
 
 const HomeTwo = () => {
